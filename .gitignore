@@ -2,13 +2,14 @@
 [Ll]ibrary/
 [Tt]emp/
 [Oo]bj/
-[Bb]uild/
-[Bb]uilds/
+/[Bb]uild/
+/[Bb]uilds/
 [Ll]ogs/
 [Uu]ser[Ss]ettings/
 
 # Output folder (build artifacts)
 [Oo]utput/
+dist/
 
 # MemoryCaptures
 [Mm]emoryCaptures/
