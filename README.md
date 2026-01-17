@@ -1,6 +1,8 @@
 # Unity WebXR Sample
 
-UnityでWebXRコンテンツをビルドするためのサンプルプロジェクトです。
+UnityでWebXR（VR/AR）コンテンツをビルドするためのサンプルプロジェクトです。
+
+**デモ**: https://yushimatenjin.github.io/unity-webxr-sample/
 
 ## 作成環境
 
@@ -48,13 +50,32 @@ https://github.com/De-Panther/unity-webxr-export.git?path=/Packages/webxr-intera
 
 > この手順を行わないと、ビルド設定でWebXRテンプレートが選択できません。
 
-### 4. シーンのセットアップ
+### 4. XR Plug-in Managementの設定（重要）
+
+WebXRローダーを有効にしないと、VR/ARボタンが非活性のままになります:
+
+1. **`Edit > Project Settings > XR Plug-in Management`** を開く
+2. 上部タブで **WebGL**（地球アイコン）を選択
+3. **`WebXR Export`** にチェックを入れる
+
+```
+XR Plug-in Management
+├── PC, Mac & Linux Standalone
+├── Android
+├── iOS
+└── WebGL  ← ここを選択
+    └── [✓] WebXR Export  ← これにチェック
+```
+
+> この設定を行わないと「No active WebXR.WebXRSubsystem is available」エラーが発生し、VR/ARボタンが押せません。
+
+### 5. シーンのセットアップ
 
 1. Main Cameraを削除または無効化
 2. `Packages/WebXR/Prefabs/WebXRCameraSet.prefab` をシーンにドラッグして配置
 3. 必要に応じてオブジェクトを追加（Plane、Cubeなど）
 
-### 5. ビルド設定
+### 6. ビルド設定
 
 1. `File > Build Settings`
 2. Platform: **WebGL** を選択 → **Switch Platform**
