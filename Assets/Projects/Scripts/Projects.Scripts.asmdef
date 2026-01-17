@@ -1,0 +1,16 @@
+{
+    "name": "Projects.Scripts",
+    "rootNamespace": "",
+    "references": [
+        "WebXR"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
